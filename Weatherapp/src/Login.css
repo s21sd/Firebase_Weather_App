@@ -1,0 +1,77 @@
+.formo {
+    height: 450px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 35px;
+}
+
+.formo {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    .formo {
+        color: #747171;
+    }
+}
+
+.formo h3 {
+    font-size: 25px;
+    font-weight: 700;
+    /* color: #e5e5e5; */
+    line-height: 1px;
+    text-align: center;
+}
+
+.formo label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.formo input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #1b1b1b;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::placeholder {
+        color: #f4eeee;
+    }
+}
+
+.formo button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #229dce;
+    color: #080710;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
