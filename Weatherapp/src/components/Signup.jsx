@@ -13,7 +13,7 @@ const Signup = () => {
 
     const handleSignUp = async (e) => {
         e.preventDefault();
-       
+
         try {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
@@ -33,16 +33,6 @@ const Signup = () => {
         }
     };
 
-    // useEffect(() => {
-    //     onAuthStateChanged(auth, function (user) {
-    //         if (user) {
-    //             console.log("This is the user ", user);
-    //         }
-    //         else {
-    //             console.log('There is no user logged in user');
-    //         }
-    //     });
-    // }, [])
     return (
 
         <div>
@@ -58,10 +48,10 @@ const Signup = () => {
                 <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password} />
 
-                <button onClick={handleSignUp}>Sign Up</button>
+                <button className='bg-gradient-to-br from-pink-400 to-blue-300 cursor-pointer' onClick={handleSignUp}>Sign Up</button>
 
-                <div className="social flex justify-end">
-                    <div className="fb"><i className="fab fa-facebook"></i><Link to="/login">Signin</Link></div>
+                <div className="social flex justify-end mt-3  ">
+                    <div className="text-xl cursor-pointer bg-gradient-to-br from-pink-400 to-blue-300 rounded-lg text-black p-2"><i className="fab fa-facebook"></i><Link to="/login">Login</Link></div>
                 </div>
             </form>
 

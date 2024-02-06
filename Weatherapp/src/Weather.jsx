@@ -37,12 +37,13 @@ const Weather = () => {
     return (
         <div className='m-10 p-10'>
             <div className='flex justify-between items-center'>
-                <CgDarkMode style={{ fontSize: '2em', marginLeft: '4' }} />
+                <div></div>
+
                 <div className='bg-gray-200 w-fit p-3 h-fit flex justify-center items-center rounded-2xl gap-2'>
                     <FaSearch onClick={fectchApi} style={{ fontSize: '2em', marginLeft: '4' }} />
                     <input onChange={(e) => setSearchCity(e.target.value)} className='bg-gray-200 ml-2 p-1 rounded-2xl' placeholder='Search' type='text' />
                 </div>
-                <button onClick={() => navigate('/getinfo')}>Get Activity</button>
+                <button className="inline-flex text-white m-2 bg-gradient-to-br from-pink-400 to-blue-300 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={() => navigate('/getinfo')}>Get Users</button>
 
             </div>
 

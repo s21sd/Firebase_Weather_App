@@ -20,7 +20,7 @@ const Login = ({ onlogin }) => {
                 if (user) {
 
                     toast.success('Login successful!');
-                    // onlogin();
+                    onlogin();
                     setTimeout(() => {
                         navigate('/main');
                     }, 2000)
@@ -49,7 +49,7 @@ const Login = ({ onlogin }) => {
                 <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password} />
 
-                <button className='cursor-pointer'>Log In</button>
+                <button className='cursor-pointer bg-gradient-to-br from-pink-400 to-blue-300'>Log In</button>
 
 
             </form>
